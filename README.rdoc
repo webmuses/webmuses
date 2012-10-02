@@ -1,8 +1,8 @@
 lokalnie:
 
 1.bundle install
-
 2.rake db:migrate
+3.rake db:seed
 
 dump bazy z heroku z uzyciem pgbackups:
 https://devcenter.heroku.com/articles/pgbackups
