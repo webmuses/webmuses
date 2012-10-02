@@ -1,0 +1,7 @@
+--- 
+label: home
+layout: application
+parent: 
+target_page: 
+is_published: true
+position: 0

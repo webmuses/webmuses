@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @muse.name %>
+</p>
+<p>
+  <b>Twitter:</b>
+  <%= @muse.twitter %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @muse.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @muse.description %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= image_tag(@muse.photo_url) %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_muse_path(@muse) %> |
+<%= link_to 'Back', admin_muses_path %>

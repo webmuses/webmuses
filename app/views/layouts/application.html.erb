@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Webmuses - <%= set_title(@cms_page) %></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="description" content="WebMuses to społeczność kobiet zafascynowanych branżą IT. Organizujemy warsztaty, spotkania, pokazy, które będą inspirować nowe działania i rozwój - nie tylko dla pań!"/>
+  <link rel="shortcut icon" href="http://webmuses.s3.amazonaws.com/favicon2.ico" type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+  <meta property="og:image" content="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/373042_367995243223930_473127270_n.jpg" />
+  <meta property="og:title" content="WebMuses"/>
+  <meta property="og:url" content="http://webmus.es"/>
+  <meta property="og:description" content="WebMuses to społeczność kobiet zafascynowanych branżą IT. Organizujemy warsztaty, spotkania, pokazy, które będą inspirować nowe działania i rozwój - nie tylko dla pań!"/>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= render :partial => 'layouts/google' if Rails.env.production? %>
+</head>
+<body>
+  <%= render :partial => "layouts/fb" %>
+  <div id="topstrip"></div>
+  <header>
+    <div class="container">
+       <div class="menu left">
+         <a href="/">home</a>
+         <a class="lcenter" href="/wydarzenia">wydarzenia</a>
+       </div>
+       <a href="/" id="brand">
+         <img src="/assets/logo.png" alt="logo"/>
+       </a>
+       <div class="menu right">
+         <a class="rcenter" href="/muses">o nas</a>
+         <a href="/materialy">materiały</a>
+       </div>
+    </div>
+  </header>
+  <div id="title">
+    <div class="container">
+       <div id="title-holder">
+         <% if @cms_page.try(:label) == "home" %>
+           <%= image_tag("/assets/head-home.png",
+               :alt => "We inspire. We educate. We make your eyes light up.") %>
+         <% else %>
+           <h1><%= set_title(@cms_page) %></h1>
+         <% end %>
+        </div>
+       <div class="clear"></div>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div> <!-- container -->
+  <footer class="clear">
+    <div class="container">
+      <a href="/"><img src="/assets/bottom.png" id="bottom" alt="bottom"/></a>
+    </div>
+    <div id="footer_copy">
+      <div class="container">
+        2012, WebMuses.
+        <a href="mailto:webmuses@gmail.com">Skontaktuj się z nami</a>
+        lub obserwuj nas na <a href="http://twitter.com/webmuses">Twitterze</a> i
+        <a href="http://www.facebook.com/webmuses">Facebooku</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

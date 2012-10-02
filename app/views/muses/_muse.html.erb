@@ -1,0 +1,12 @@
+<div class="muse <%= "last" if (muse_counter+1)%3 == 0 %>">
+  <div>
+    <%= image_tag(muse.photo_url) %>
+    <h3><%= raw(muse.name) %></h3>
+    <h5 class="twitter"><%= twitter_link(muse.twitter) %></h5>
+    <h4><%= muse.title %></h4>
+    <%= simple_format(raw(muse.description)) %>
+  </div>
+</div>
+<% if [2, 5].include?(muse_counter)%>
+  <div class="dotted"></div>
+<% end %>
