@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <title>Webmuses - <%= set_title(@cms_page) %></title>
+  <title><%= raw @title %> - Webmuses </title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="description" content="WebMuses to społeczność kobiet zafascynowanych branżą IT. Organizujemy warsztaty, spotkania, pokazy, które będą inspirować nowe działania i rozwój - nie tylko dla pań!"/>
   <link rel="shortcut icon" href="http://webmuses.s3.amazonaws.com/favicon2.ico" type="image/x-icon">
@@ -36,11 +36,11 @@
   <div id="title">
     <div class="container">
        <div id="title-holder">
-         <% if @cms_page.try(:label) == "home" %>
+         <% if @title == "home" %>
            <%= image_tag("/assets/head-home.png",
                :alt => "We inspire. We educate. We make your eyes light up.") %>
          <% else %>
-           <h1><%= set_title(@cms_page) %></h1>
+           <h1><%= raw @title %></h1>
          <% end %>
         </div>
        <div class="clear"></div>
