@@ -2,6 +2,7 @@ class StaticPagesController < ApplicationController
 
   def home
     @title = "Home"
+    @partners = Partner.visible.order("position ASC").all
   end
 
   def events

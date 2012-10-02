@@ -9,22 +9,7 @@ zawsze w pełnej pozytywnej energii atmosferze. </p>
   </div>
   <div id="partne">
     <h2>Sponsorzy</h2>
-    <div>
-      <a href="http://kompany.pl/" target="_blank"><img src="/assets/sponsors/kompany.png" id="kompany" alt="kompany"/></a>
-      <p><a href="http://kompany.pl/" target="_blank">KOMPANY</a> - miejsce freelancerów, przestrzeń dla koncepcji, sieć do łapania dobrych kontatków. Miejsce spotkań i warsztatów WebMuses!</p>
-    </div>
-    <div>
-      <a href="http://applicake.com/" target="_blank"><img src="/assets/sponsors/applicake.png" alt="applicake"/></a>
-      <p><a href="http://applicake.com/" target="_blank">Applicake</a> - krakowski Software House, od 6ciu lat zajmuje się pieczeniem aplikacji webowych i mobilnych. WebMusowa pomoc organizacyjna oraz przestrzeń do spotkań Amusing Workshops.</p>
-    </div>
-    <div>
-      <a href="http://www.futuresimple.com/" target="_blank"><img src="/assets/sponsors/fs.png" alt="fs"/></a>
-      <p><a href="http://www.futuresimple.com/" target="_blank">Future Simple</a> - amerykańska firma z działem R&amp;D w Krakowie, a zarazem centrum lokalnej kultury hackerskiej. Organizują comiesięczne hackathony <a href="http://hackkrk.com/" target="_blank">HackKRK</a>.</p>
-    </div>
-    <div>
-      <a href="http://www.berrylife.pl/" target="_blank"><img src="/assets/sponsors/berrylife.png" alt="berrylife"/></a>
-      <p><a href="http://www.berrylife.pl/" target="_blank">Berrylife</a> - eksperci owocnej interakcji - rozwiązania interaktywne na eventy i stałe ekspozycje. Wsparcie techniczne i sprzętowe WebMuses.</p>
-    </div>
+    <%= render collection: @partners, partial: "partners/partner" %>
   </div>
 </div>
 
