@@ -4,14 +4,6 @@ lokalnie:
 
 2.rake db:migrate
 
-3.go to /cms-admin and create default localhost Site
-3.impoting sites
-  rake comfortable_mexican_sofa:fixtures:import FROM=localhost TO=localhost
-4.exporting sites
-  local:
-  rake comfortable_mexican_sofa:fixtures:export FROM=localhost TO=localhost
-5.rake db:seed (to create some dummy data from db/seeds)
-
 dump bazy z heroku z uzyciem pgbackups:
 https://devcenter.heroku.com/articles/pgbackups
 1. heroku pgbackups:capture
@@ -25,4 +17,3 @@ heroku:
 1. git push heroku master (instaluje na heroku to co jest w masterze)
 2. heroku run rake db:migrate (jesli sa nowe migracje)
 3. heroku restart ( jesli sa nowe migracje)
-4. heroku run rake comfortable_mexican_sofa:fixtures:import FROM=localhost TO=webmuses.herokuapp.com
