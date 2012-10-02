@@ -5,6 +5,7 @@ class StaticPagesController < ApplicationController
     @partners = Partner.visible.order("position ASC").all
   end
 
+  #TODO move to controller
   def events
     @title = "Mo&#380;e wpadniesz?"
   end
