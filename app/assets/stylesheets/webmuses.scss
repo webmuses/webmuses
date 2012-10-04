@@ -77,8 +77,8 @@ nav ul {
   li {
     display: inline-block;
   }
-  li:first-child { margin-right: 120px;}
-  li:last-child { margin-left: 140px;}
+  li:first-child { margin-right: 120px; }
+  li:last-child { margin-left: 140px; }
   #brand + li {
     margin-left: -20px;
   } 
@@ -101,6 +101,7 @@ nav ul {
 
 a {
   color: #1cbcaf;
+  img { border: none; }
 }
 
 a:hover {
