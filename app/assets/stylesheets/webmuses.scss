@@ -317,7 +317,7 @@ h3.strip a:hover {
   clear:both;
 }
 
-#twitter_icon, #facebook_icon {
+#twitter_icon, #facebook_icon, #gplus_icon {
   margin-right: 8px;
   height: 46px;
   width: 46px;
@@ -333,11 +333,15 @@ h3.strip a:hover {
   background: url('../assets/fb2.png') 0px 0px no-repeat;
 }
 
-#twitter_icon:hover{
+#gplus_icon {
+  background: url('../assets/gplus.png') 0px 0px no-repeat;
+}
+
+#twitter_icon:hover, #facebook_icon:hover {
   background-position: 0px -46px;
 }
 
-#facebook_icon:hover{
+#gplus_icon:hover{
   background-position: 0px -46px;
 }
 
