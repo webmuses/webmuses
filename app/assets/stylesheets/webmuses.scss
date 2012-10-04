@@ -28,9 +28,7 @@ h2 {
 }
 
 header {
-  width: 100%;
-  height: 80px;
-  padding: 90px 0 25px 0;
+  padding: 20px 0 28px 0;
 }
 
 header a {
@@ -66,57 +64,39 @@ header a:hover {
   margin-top: 15px;
 }
 
-.menu {
+nav ul {
+  list-style: none;
   font-size: 0.9em;
   letter-spacing: 0.1em;
-  display: inline-block;
-  width: 370px;
   text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 25px;
   border-bottom: 1px solid black;
-}
-
-.menu a {
+  height: 102px;
+  overflow-y: visible;
+  margin-bottom: 30px;
   padding-left: 20px;
-}
-
-.left {
-  float: left;
-  padding-left: 20px;
-}
-
-a.lcenter{
-  margin-left: 120px;
-}
-
-.right {
-  float: right;
-  padding-right: 20px;
-}
-
-.right a {
-  float: right;
-  padding-right:20px;
-}
-
-a.rcenter {
-  margin-left: 120px;
-}
-
-.menu a.active{
-  background: url('../assets/dot.png') no-repeat 0px 50%;
-
-}
-
-#brand {
-  display: inline-block;
-  width: 140px;
-  height: 140px;
-  text-align: center;
-  position: relative;
-  bottom: 60px;
-  margin-left: 10px;
+  li {
+    display: inline-block;
+  }
+  li:first-child { margin-right: 120px;}
+  li:last-child { margin-left: 130px;}
+  #brand + li {
+    margin-left: -20px;
+  } 
+  a.logo {
+    margin: 0 48px;
+    display: inline-block;
+    width: 162px;
+    height: 140px;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+  }
+  a:not(.logo) {
+    padding-left: 20px;
+  }
+  a.active{
+    background: url('../assets/dot.png') no-repeat 0px 50%;
+  }
 }
 
 a {
