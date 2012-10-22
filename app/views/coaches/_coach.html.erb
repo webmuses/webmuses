@@ -7,6 +7,6 @@
     <%= simple_format(raw(coach.description)) %>
   </div>
 </div>
-<% if [2, 5].include?(coach_counter)%>
+<% if (coach_counter%3) == 2%>
   <div class="dotted"></div>
 <% end %>
