@@ -1,0 +1,11 @@
+<div class="event">
+ <h4><a target="_blank" href="<%= event.fb_url %>"><%= raw event.name %></a></h4>
+ <br/>
+ <h5><%= raw event. headline %></h5>
+ <p><%= raw event.date_description %></p>
+ <p><%= raw event.location %></p>
+ <% if event.price.present? %>
+   <p>Koszt: <%= raw event.price %></p>
+ <% end %>
+ <p>Zapisy: <br/> <%= link_to event.registration_url, event.registration_url, target: "blank" %></p>
+</div><!-- event -->

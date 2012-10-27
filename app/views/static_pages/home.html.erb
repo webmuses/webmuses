@@ -21,39 +21,16 @@ zawsze w pełnej pozytywnej energii atmosferze. </p>
  </div>
  <div class="clear">&nbsp;</div>
  <div>Napisz do nas:&nbsp;<a href="mailto:webmuses@gmail.com" id="mail_link">webmuses@gmail.com</a></div>
-  <div id="upcoming_events" class="box" style="display:none;">
+  <div id="upcoming_events" class="box">
    <h3 class="strip"><a href="/wydarzenia">Nadchodzące wydarzenia</a></h3>
    <div class="inside">
-    <div class="event">
-      <h4><a href="#">Amusing Workshops #4</a></h4>
-      <h5>Comiesięczne warsztaty technologiczne</h5>
-      Najbliższe warsztaty: dostępność interfejsów (web accessibility)<br />
-      Kiedy: 11 września, godz. 18.00 - 22.00<br />
-      Miejsce: Kompany, ul. Berka Joselewicza 21<br />
-      Koszt: 20 PLN<br/>
-      Zapisy: <a href="http://amusing-workshops-4.eventbrite.com/">http://amusing-workshops-4.eventbrite.com/</a>
-    </div><!-- event -->
-  </div><!-- inside -->
+     <%= render partial: "events/event", collection: @current_events %>
+   </div>
  </div> <!-- upcoming events -->
  <div id="past_events" class="box">
    <h3 class="strip"><a href="/wydarzenia">Co już było?</a></h3>
    <div class="inside">
-    <div class="event">
-      <h4><a href="#">Rails Girls Kraków</a></h4>
-      <h5>Pierwsza w Polsce edycja <a href="http://railsgirls.com/krakow">Rails Girls</a> - warsztatów programistycznych dla kobiet</h5>
-      Kiedy: 7 i 18 kwietnia 2012<br/>
-      Miejsce: Applicake, ul. Marii Curie - Skłodowskiej 5 / 3<br />
-      <br/>40 uczestniczek podzielonych na 3-4 osobowe grupy spędziło kilkanaście godzin pod okiem zawodowców, krok po kroku poznając podstawy programowania.<br/>
-
-      Zobaczcie sami, co się działo <a href="http://blog.railsgirls.com/post/21319379136/installment-fest-krakow-style-at-applicake-offices" target="_blank">pierwszego</a><br/>i&nbsp;<a href="http://blog.railsgirls.com/post/21341018815/try-build-go-learn-what-its-on-heroku-now" target="_blank">drugiego</a>&nbsp;dnia <strong>Rails Girls</strong> w Krakowie!<br/>
-    </div><!-- event -->
-    <div class="event">
-      <h4><a href="#">Summer Rails for Rubies</a></h4>
-      <h5>Letnia Szkoła Ruby on Rails</h5>
-      Kiedy:  Poniedziałki, godz. 18.30 - 22.00 <br />
-      Terminy: 16 lipca, 23 lipca, 30 lipca, 6 sierpnia, 13 sierpnia, 20 sierpnia (4 - 6 spotkań) <br />
-      Miejsce: KOMPANY, ul. Berka- Joselewicza, Kraków <br />
-    </div><!-- event -->
+     <%= render partial: "events/event", collection: @past_events %>
   </div><!-- inside -->
  </div> <!-- past events -->
 </aside>

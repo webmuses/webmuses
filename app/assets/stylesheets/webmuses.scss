@@ -224,7 +224,10 @@ aside {
 }
 
 .box .inside .event a, #partne a, div.tab-box li a, #muses .muse div p a {
-  color: #000;
+  color: #444444;
+}
+.box .inside .event p{
+  margin: 3px 0px;
 }
 
 .box .inside .event a:hover, #partne a:hover, div.tab-box li a:hover, #muses .muse div p a:hover {
@@ -446,7 +449,7 @@ ul#tabs li a {
 
 ul#tabs li.current,  ul#tabs li.current a {
   background-color: #ffffff;
-  color: #000000;
+  color: #444444;
 }
 
 div.tabbed {

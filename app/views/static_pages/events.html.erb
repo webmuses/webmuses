@@ -55,13 +55,7 @@
   <div id="upcoming_events" class="box">
     <h3 class="strip"><a href="/wydarzenia">Nadchodzące wydarzenia</a></h3>
     <div class="inside">
-      <div class="event">
-        <h4><a href="https://www.facebook.com/events/438581042845700/" target="_blank">Amusing Workshop #6</a></h4>
-        <h5>Programming Made Easy - Pierwsze Kroki</h5>
-        23 października (wtorek), godz. 18.00<br />
-        KOMPANY, ul. Berka Joselewicza 21<br />
-        Koszt: 15 PLN<br />
-        Rejestracja: <a href="http://www.amusing6.evenea.pl/">http://www.amusing6.evenea.pl/</a>
+      <%= render partial: "events/event", collection: @current_events %>
     </div><!-- event -->
     </div><!-- inside -->
   </div> <!-- upcoming events -->
