@@ -183,12 +183,12 @@ ActiveRecord::Schema.define(:version => 20121027162017) do
     t.datetime "end_at"
     t.string   "fb_url"
     t.string   "registration_url"
-    t.datetime "created_at",                                         :null => false
-    t.datetime "updated_at",                                         :null => false
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
     t.string   "date_description"
-    t.boolean  "past",                            :default => false
-    t.boolean  "current",          :limit => 255, :default => false
+    t.boolean  "past",             :default => false
     t.string   "price"
+    t.boolean  "current"
   end
 
   create_table "muses", :force => true do |t|

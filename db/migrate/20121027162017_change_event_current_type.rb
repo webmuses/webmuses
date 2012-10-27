@@ -1,9 +1,6 @@
 class ChangeEventCurrentType < ActiveRecord::Migration
   def up
-    change_column :events, :current, :boolean
-  end
-
-  def down
-    change_column :events, :current, :string
+    remove_column :events, :current
+    add_column :events, :current, :boolean
   end
 end
