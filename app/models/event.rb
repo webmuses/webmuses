@@ -5,4 +5,9 @@ class Event < ActiveRecord::Base
   scope :visible, where("state != 'draft'")
   scope :current, where("state = ?", 'current')
   scope :past, where("state = ?", 'past')
+
+
+  def current?
+    state == "current"
+  end
 end

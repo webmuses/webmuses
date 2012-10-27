@@ -6,7 +6,7 @@
  <% if event.price.present? %>
    <p>Koszt: <%= raw event.price %></p>
  <% end %>
- <% if event.registration_url.present? %>
+ <% if event.registration_url.present? and event.current? %>
    <p><b>Zapisy:</b><br/> <%= link_to event.registration_url, event.registration_url, target: "blank" %></p>
  <% end %>
 </div><!-- event -->

@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 gem 'activeadmin'
+gem 'rails_autolink'
+gem 'thin'
 
 group :development, :test do
   gem 'sqlite3'
