@@ -2,17 +2,17 @@
   <h3 class="strip"><a target="_blank" href="<%= event.fb_url %>"><%= raw event.name %></a></h3>
   <div class="inside">
     <div class="event">
-     <h3><%= raw event. headline %></h3>
-     <p><b>Kiedy:</b> <%= raw event.date_description %></p>
-     <p><b>Gdzie: </b><%= raw event.location %></p>
-     <% if event.price.present? %>
-       <p><b>Koszt: </b><%= raw event.price %></p>
-     <% end %>
-     <% if event.registration_url.present? %>
-        <p><b>Zapisy: </b><br/> <%= link_to event.registration_url, event.registration_url, target: "blank" %></p>
-     <% end %>
-     <p><b>Więcej:</b></p>
-     <%= simple_format event.description %>
-   </div><!-- event -->
- </div><!-- inside -->
+      <h3><%= raw event. headline %></h3>
+      <p><b>Kiedy:</b> <%= raw event.date_description %></p>
+      <p><b>Gdzie: </b><%= raw event.location %></p>
+      <% if event.price.present? %>
+        <p><b>Koszt: </b><%= raw event.price %></p>
+      <% end %>
+      <% if event.registration_url.present? %>
+         <p><b>Zapisy: </b><br/> <%= link_to event.registration_url, event.registration_url, target: "blank" %></p>
+      <% end %>
+      <p><b>Więcej:</b></p>
+      <%= simple_format event.description %>
+    </div><!-- event -->
+  </div><!-- inside -->
 </div><!-- box -->

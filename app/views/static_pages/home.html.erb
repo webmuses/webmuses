@@ -14,24 +14,31 @@ zawsze w pełnej pozytywnej energii atmosferze. </p>
 </div>
 
 <aside>
- <div class="icons">
-   <a href="http://twitter.com/webmuses" id="twitter_icon" target="_blank"></a>
-   <a href="http://facebook.com/webmuses" id="facebook_icon" target="_blank"></a>
-   <a href="http://gplus.to/webmuses" id="gplus_icon" target="_blank"></a>
- </div>
- <div class="clear">&nbsp;</div>
- <div>Napisz do nas:&nbsp;<a href="mailto:webmuses@gmail.com" id="mail_link">webmuses@gmail.com</a></div>
-  <div id="upcoming_events" class="box">
-   <h3 class="strip"><a href="/wydarzenia">Nadchodzące wydarzenia</a></h3>
-   <div class="inside">
-     <%= render partial: "events/event", collection: @current_events %>
-   </div>
- </div> <!-- upcoming events -->
- <div id="past_events" class="box">
-   <h3 class="strip"><a href="/wydarzenia">Co już było?</a></h3>
-   <div class="inside">
-     <%= render partial: "events/event", collection: @past_events %>
-  </div><!-- inside -->
- </div> <!-- past events -->
+  <div class="icons">
+    <a href="http://twitter.com/webmuses" id="twitter_icon" target="_blank"></a>
+    <a href="http://facebook.com/webmuses" id="facebook_icon" target="_blank"></a>
+    <a href="http://gplus.to/webmuses" id="gplus_icon" target="_blank"></a>
+  </div>
+  <div class="clear">&nbsp;</div>
+  <div>
+    Napisz do nas:&nbsp;
+    <a href="mailto:webmuses@gmail.com" id="mail_link">webmuses@gmail.com</a>
+  </div>
+  <% if @current_events.present? %>
+    <div id="upcoming_events" class="box">
+      <h3 class="strip"><a href="/wydarzenia">Nadchodzące wydarzenia</a></h3>
+      <div class="inside">
+        <%= render partial: "events/event", collection: @current_events %>
+      </div>
+    </div> <!-- upcoming events -->
+  <% end %>
+  <% if @past_events.present? %>
+    <div id="past_events" class="box">
+      <h3 class="strip"><a href="/wydarzenia">Co już było?</a></h3>
+      <div class="inside">
+        <%= render partial: "events/event", collection: @past_events %>
+      </div><!-- inside -->
+    </div> <!-- past events -->
+  <% end %>
 </aside>
 <%= render partial: "layouts/social" %>
