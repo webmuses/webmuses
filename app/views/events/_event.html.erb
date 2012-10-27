@@ -7,5 +7,7 @@
  <% if event.price.present? %>
    <p>Koszt: <%= raw event.price %></p>
  <% end %>
- <p>Zapisy: <br/> <%= link_to event.registration_url, event.registration_url, target: "blank" %></p>
+ <% if event.registration_url.present? %>
+   <p>Zapisy: <br/> <%= link_to event.registration_url, event.registration_url, target: "blank" %></p>
+ <% end %>
 </div><!-- event -->

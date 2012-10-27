@@ -1,1 +1,3 @@
-<%= render @events %>
+<div id="events">
+  <%= render collection: @events, partial: 'events/event_box', as: 'event' %>
+</div>

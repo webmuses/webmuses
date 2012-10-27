@@ -6,7 +6,7 @@ Webmuses::Application.routes.draw do
   resources :muses, only: [:index]
   resources :events, only: [:index, :show]
   resources :coaches, only: [:index]
-  match '/wydarzenia', :to  => 'static_pages#events'
+  match '/wydarzenia', :to  => 'events#summary'
   match '/materialy', :to  => 'static_pages#materials'
   root :to  => 'static_pages#home', as: 'home'
 end
