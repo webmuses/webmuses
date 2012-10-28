@@ -538,7 +538,9 @@ div.tabbed {
  line-height: 1.4em;
 }
 
-#muses  {
+/* About us/Coaches */
+
+#muses {
   margin-top: 50px;
   margin-bottom: 40px;
   .muse {
@@ -564,18 +566,36 @@ div.tabbed {
      margin: 0px;
     }
   }
+  .muse.last {
+    margin-right: 0px;
+    border-right: none;
+    width: 250px;
+  }
   .muse.coach {
-    img {
-      width: auto;
-      height: 306px;
+    width: 224px;
+    margin-right: 20px;
+    div {
+      width: 204px;
     }
+    img {
+      width: 198px;
+      height: auto;
+    }
+    h3 {
+     font-size: 19px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .muse.coach.last {
+    width: 194px;
+    margin-right: 0;
   }
 }
 
-#muses .muse.last {
-  margin-right: 0px;
-  border-right: none;
-  width: 250px;
+#muses.coaches {
+  margin-top: 30px;
 }
 
 #muses .muse h5.twitter {
