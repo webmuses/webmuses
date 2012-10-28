@@ -4,7 +4,7 @@
     <h3><%= raw(coach.name) %></h3>
     <h5 class="twitter"><%= twitter_link(coach.twitter) %></h5>
     <h4></h4>
-    <%= simple_format(raw(coach.description)) %>
+    <%= simple_format(coach.description, {}, sanitize: false) %>
   </div>
 </div>
 <% if (coach_counter%4) == 3%>
