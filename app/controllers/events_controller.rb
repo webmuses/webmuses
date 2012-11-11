@@ -8,5 +8,6 @@ class EventsController < ApplicationController
   def summary
     @title = "Mo&#380;e wpadniesz?"
     @current_events = Event.current.all
+    @past_events = Event.past.limit(2).order("random()")
   end
 end
