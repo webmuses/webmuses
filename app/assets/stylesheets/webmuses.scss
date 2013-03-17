@@ -224,14 +224,14 @@ aside {
   margin: 0;
 }
 
-.box .inside .event a, #partne a, div.tab-box li a, #muses .muse div p a {
+.box .inside .event a, #partners a, #sponsors a, div.tab-box li a, #muses .muse div p a {
   color: #444444;
 }
 .box .inside .event p{
   margin: 3px 0px;
 }
 
-.box .inside .event a:hover, #partne a:hover, div.tab-box li a:hover, #muses .muse div p a:hover {
+.box .inside .event a:hover, #partners a:hover, #sponsors a:hover, div.tab-box li a:hover, #muses .muse div p a:hover {
   color: #1FCFC1;
 }
 
@@ -503,7 +503,7 @@ div.tabbed {
   height: 219px;
 }
 
-#partne img {
+#partners img, #sponsors img {
    float: left;
 }
 
@@ -511,19 +511,19 @@ div.tabbed {
   margin: -8px 0 0 48px;
 }
 
-#partne p {
+#partners p, #sponsors p {
    float: right;
    padding-top: 3px;
    width: 380px;
 }
 
-#partne div {
+#partners div, #sponsors div {
    clear: both;
    min-height: 100px;
    padding: 25px 0;
 }
 
-#partne, #us{
+#partners, #sponsors, #us{
   border-bottom: 1px dashed #ccc;
 }
 
@@ -531,7 +531,7 @@ div.tabbed {
   padding-bottom: 20px;
 }
 
-#partne {
+#partners, #sponsors {
   margin-bottom: 10px;
 }
 

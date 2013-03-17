@@ -7,8 +7,12 @@ od programowania po design.</p>
 <p>Chcemy dzielić się pasją, zachęcać, inspirować – siebie i innych (panów także!). Zapraszamy na warsztaty, spotkania, prezentacje i wspólne kodowanie,
 zawsze w pełnej pozytywnej energii atmosferze. </p>
   </div>
-  <div id="partne">
+  <div id="sponsors">
     <h2>Sponsorzy</h2>
+    <%= render collection: @sponsors, partial: "partners/partner" %>
+  </div>
+  <div id="partners">
+    <h2>Partnerzy</h2>
     <%= render collection: @partners, partial: "partners/partner" %>
   </div>
 </div>
