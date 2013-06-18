@@ -1,16 +1,12 @@
 development:
-  adapter: postgresql
-  encoding: utf8
-  database: muses
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
-  username: postgres
-  password:
+  timeout: 5000
 
 test:
-  adapter: postgresql
-  encoding: utf8
-  database: tc_test
+  adapter: sqlite3
+  database: db/test.sqlite3
   pool: 5
-  username: postgres
-  password:
+  timeout: 5000
 
