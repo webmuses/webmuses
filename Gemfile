@@ -1,8 +1,10 @@
 #Gem
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'rails', '3.2.13'
-gem 'activeadmin'
+gem 'activeadmin', '0.5.1'
 gem 'rails_autolink'
 gem 'thin'
 
