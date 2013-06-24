@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130317150752) do
+ActiveRecord::Schema.define(:version => 20130624081346) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -47,20 +47,21 @@ ActiveRecord::Schema.define(:version => 20130317150752) do
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
   create_table "coaches", :force => true do |t|
-    t.text     "description"
+    t.text     "description_pl"
     t.string   "name"
     t.string   "photo"
     t.boolean  "visible"
     t.string   "twitter"
     t.string   "url"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.text     "description_en"
   end
 
   create_table "events", :force => true do |t|
     t.string   "name"
     t.string   "headline"
-    t.text     "description"
+    t.text     "description_pl"
     t.string   "location"
     t.datetime "start_at"
     t.datetime "end_at"
@@ -71,29 +72,32 @@ ActiveRecord::Schema.define(:version => 20130317150752) do
     t.string   "date_description"
     t.string   "price"
     t.string   "state",            :default => "draft"
+    t.text     "description_en"
   end
 
   create_table "muses", :force => true do |t|
     t.string   "name"
-    t.text     "description"
+    t.text     "description_pl"
     t.boolean  "visible"
     t.string   "photo_url"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
     t.string   "title"
     t.string   "twitter"
+    t.text     "description_en"
   end
 
   create_table "partners", :force => true do |t|
     t.string   "image"
     t.string   "name"
-    t.text     "description"
+    t.text     "description_pl"
     t.string   "url"
     t.integer  "position"
     t.boolean  "visible"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
-    t.string   "category",    :default => "normal"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.string   "category",       :default => "normal"
+    t.text     "description_en"
   end
 
 end
