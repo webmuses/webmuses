@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 gem 'activeadmin', '0.5.1'
 gem 'rails_autolink'
 gem 'thin'
+gem 'i18n'
 
 group :development, :test do
   gem 'sqlite3'

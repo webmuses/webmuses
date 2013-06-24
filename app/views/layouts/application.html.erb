@@ -22,15 +22,15 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="/wydarzenia">wydarzenia</a></li>
-          <li><a href="/materialy">materiały</a></li>
+          <li><%= link_to t("menu.events"), wydarzenia_path %></li>
+          <li><%= link_to t("menu.materials"), materialy_path %></li>
           <li id="brand">
-            <a href="/" class="logo">
+            <%= link_to home_path, { class: "logo" } do %>
               <img src="/assets/logo.png" alt="Powrót do strony głównej"/>
-            </a>
+            <% end %>
           </li>
-          <li><a href="/muses">o nas</a></li>
-          <li><a href="/coaches">Nasi coachowie</a></li>
+          <li><%= link_to t("menu.muses"), muses_path %></li>
+          <li><%= link_to t("menu.coaches"), coaches_path %></li>
         </ul>
       </nav>
     </div>

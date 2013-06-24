@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
   end
 
   def materials
-    @title = "Zainspiruj si&#281;!"
+    @title = t('materials.headline')
   end
 
 end

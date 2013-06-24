@@ -1,18 +1,20 @@
 <div id="posts">
  <div id="us">
-   <h2>Kim jesteśmy i czym się zajmujemy?</h2>
-   <p><strong>WebMuses to społeczność kobiet zafascynowanych branżą IT.</strong><br/>
-  Interesuje nas wszystko co związane z technologią,
-od programowania po design.</p>
-<p>Chcemy dzielić się pasją, zachęcać, inspirować – siebie i innych (panów także!). Zapraszamy na warsztaty, spotkania, prezentacje i wspólne kodowanie,
-zawsze w pełnej pozytywnej energii atmosferze. </p>
+   <h2><%= t 'home.headline' %></h2>
+   <p>
+     <strong><%= t 'home.subtext' %></strong><br/>
+     <%= t 'home.text_1' %>
+   </p>
+   <p>
+     <%= t 'home.text_2' %>
+   </p>
   </div>
   <div id="sponsors">
-    <h2>Sponsorzy</h2>
+    <h2><%= t 'home.sponsors' %></h2>
     <%= render collection: @sponsors, partial: "partners/partner" %>
   </div>
   <div id="partners">
-    <h2>Partnerzy</h2>
+    <h2><%= t 'home.partners' %></h2>
     <%= render collection: @partners, partial: "partners/partner" %>
   </div>
 </div>

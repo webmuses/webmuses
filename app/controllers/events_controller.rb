@@ -1,12 +1,12 @@
 class EventsController < ApplicationController
 
   def index
-    @title = "Wydarzenia"
+    @title = t('events.headline')
     @events = Event.visible.order("start_at DESC").all
   end
 
   def summary
-    @title = "Mo&#380;e wpadniesz?"
+    @title = t('events.headline')
     @current_events = Event.current.all
     @past_events = Event.past.limit(2).order("random()")
   end

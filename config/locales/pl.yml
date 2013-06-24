@@ -1,0 +1,26 @@
+pl:
+  menu:
+    events: wydarzenia
+    materials: materiały
+    about: o nas
+    coaches: nasi coachowie
+  home:
+    headline: "Kim jesteśmy i czym się zajmujemy?"
+    subtext: "WebMuses to społeczność kobiet zafascynowanych branżą IT"
+    text_1: "Interesuje nas wszystko co związane z technologią, od programowania po design."
+    text_2: "Chcemy dzielić się pasją, zachęcać, inspirować – siebie i innych (panów także!). Zapraszamy na warsztaty, spotkania, prezentacje i wspólne kodowanie, zawsze w pełnej pozytywnej energii atmosferze."
+    sponsors: Sponsorzy
+    partners: Partnerzy
+    newsletter_1: Chcesz być informowana/y o wydarzeniach na bieżąco?
+    newsletter_2: Dopisz się do naszego newslettera.
+  materials:
+    headline: Zainspiruj się!
+    recommended: Recommended
+  muses:
+    headline: Poznaj nas :)
+  coaches:
+    headline: Nasi coachowie :)
+  events:
+    headline: Może wpadniesz?
+
+

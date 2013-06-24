@@ -1,7 +1,7 @@
 class CoachesController < ApplicationController
 
   def index
-    @title = "Nasi coachowie :)"
+    @title = t('coaches.headline')
     @coaches = Coach.visible.all.shuffle
   end
 end
