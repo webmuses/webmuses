@@ -1,9 +1,62 @@
 en:
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: ! '%d-%m-%Y'
+      long: ! '%d %B, %Y'
+      short: ! '%d %b'
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :day
+    - :month
+    - :year
   menu:
-    events: events
+    events: Our events
     materials: materials
     about: about us
-    coaches: our coaches
+    coaches: coaches
   home:
     headline: "Who we are and what we do"
     subtext: "WebMuses is a women empowered IT-oriented community."
@@ -15,7 +68,7 @@ en:
     newsletter_2: "Sign up for our newsletter"
   materials:
     headline: Get inspired!
-    recommended: Polecamy!
+    recommended: Recommended
   muses:
     headline: Meet us :)
   coaches:
