@@ -1,0 +1,18 @@
+<aside class="materials">
+  <% if @current_events.present? %>
+    <div id="upcoming_events" class="box">
+      <h3 class="strip"><a href="/wydarzenia">Nadchodzące wydarzenia</a></h3>
+      <div class="inside">
+        <%= render partial: "events/event", collection: @current_events %>
+      </div><!-- inside -->
+    </div> <!-- upcoming events -->
+  <% end %>
+  <% if @past_events.present? %>
+    <div id="past_events" class="box">
+      <h3 class="strip"><a href="/wydarzenia">Co już było?</a></h3>
+      <div class="inside">
+        <%= render partial: "events/event", collection: @past_events %>
+      </div><!-- inside -->
+    </div> <!-- past events -->
+  <% end %>
+</aside>
