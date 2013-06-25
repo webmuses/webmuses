@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '3.2.13'
-gem 'activeadmin', '0.5.1'
+gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'rails_autolink'
 gem 'thin'
 gem 'i18n'
