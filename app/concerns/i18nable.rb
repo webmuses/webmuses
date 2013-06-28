@@ -11,4 +11,8 @@ module I18nable
     i18n_value("description")
   end
 
+  def title
+    i18n_value("title")
+  end
+
 end
