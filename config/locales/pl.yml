@@ -1,57 +1,4 @@
 pl:
-  date:
-    abbr_day_names:
-      - nie
-      - pon
-      - wto
-      - śro
-      - czw
-      - pią
-      - sob
-    abbr_month_names:
-      - ~
-      - sty
-      - lut
-      - mar
-      - kwi
-      - maj
-      - cze
-      - lip
-      - sie
-      - wrz
-      - paź
-      - lis
-      - gru
-    day_names:
-      - niedziela
-      - poniedziałek
-      - wtorek
-      - środa
-      - czwartek
-      - piątek
-      - sobota
-    formats:
-      default: "%d-%m-%Y"
-      long: "%B %d, %Y"
-      short: "%d %b"
-    month_names:
-      - ~
-      - styczeń
-      - luty
-      - marzec
-      - kwiecień
-      - maj
-      - czerwiec
-      - lipiec
-      - sierpień
-      - wrzesień
-      - październik
-      - listopad
-      - grudzień
-    order:
-      - :day
-      - :month
-      - :year
   menu:
     events: wydarzenia
     materials: materiały
@@ -59,13 +6,16 @@ pl:
     coaches: nasi coachowie
   home:
     headline: Kim jesteśmy i czym się zajmujemy?
-    subtext: WebMuses to społeczność kobiet zafascynowanych branżą IT
-    text_1: Interesuje nas wszystko co związane z technologią, od programowania po design.
-    text_2: Chcemy dzielić się pasją, zachęcać, inspirować – siebie i innych (panów także!). Zapraszamy na warsztaty, spotkania, prezentacje i wspólne kodowanie, zawsze w pełnej pozytywnej energii atmosferze.
+    subtext: WebMuses to społeczność zafascynowana branżą IT
+    text_1:  "Interesuje nas wszystko, co w sieci: od programowania po design. Dzielimy się wiedzą, umiejętnościami, pozytywną energią, organizujemy warsztaty, spotkania i grupy robocze."
+    text_2: Zapraszamy Cię na nie, bez względu na Twój poziom zaawansowania!
     sponsors: Sponsorzy
     partners: Partnerzy
     newsletter_1: Chcesz być informowana/y o wydarzeniach na bieżąco?
     newsletter_2: Dopisz się do naszego newslettera.
+    write: Napisz do nas
+    coming_up: Nadchodzące wydarzenia
+    past_event: Co już było?
   materials:
     headline: Zainspiruj się!
     recommended: Polecamy!

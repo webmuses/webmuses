@@ -1,57 +1,4 @@
 en:
-  date:
-    abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
-    abbr_month_names:
-    -
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
-    day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
-    formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%d %B, %Y'
-      short: ! '%d %b'
-    month_names:
-    -
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
-    order:
-    - :day
-    - :month
-    - :year
   menu:
     events: Our events
     materials: materials
@@ -66,6 +13,9 @@ en:
     partners: Partners
     newsletter_1: "Wanna be up to date with our events?"
     newsletter_2: "Sign up for our newsletter"
+    write: Contact us
+    coming_up: Coming up
+    past_event: Past events
   materials:
     headline: Get inspired!
     recommended: Recommended

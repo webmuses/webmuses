@@ -17,7 +17,16 @@
 </head>
 <body>
   <%= render :partial => "layouts/fb" %>
-  <div id="topstrip"></div>
+  <div id="topstrip">
+    <div class="lang-icons">
+     <%= link_to url_for(:locale => 'en', :scope => params[:scope]) do %>
+       <%= image_tag("/assets/flag_uk.png") %>
+     <% end %>
+     <%= link_to url_for(:locale => 'pl', :scope => params[:scope]) do %>
+       <%= image_tag("/assets/flag_pl.png") %>
+     <% end %>
+    </div>
+  </div>
   <header>
     <div class="container">
       <nav>

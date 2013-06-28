@@ -28,12 +28,13 @@
   </div>
   <div class="clear">&nbsp;</div>
   <div>
-    Napisz do nas:&nbsp;
+    <%= t 'home.write' %>
+    :&nbsp;
     <a href="mailto:webmuses@gmail.com" id="mail_link">webmuses@gmail.com</a>
   </div>
   <% if @current_events.present? %>
     <div id="upcoming_events" class="box">
-      <h3 class="strip"><a href="/wydarzenia">Nadchodzące wydarzenia</a></h3>
+      <h3 class="strip"><a href="/wydarzenia"><%= t 'home.coming_up' %></a></h3>
       <div class="inside">
         <%= render partial: "events/event", collection: @current_events %>
       </div>
@@ -41,7 +42,7 @@
   <% end %>
   <% if @past_events.present? %>
     <div id="past_events" class="box">
-      <h3 class="strip"><a href="/wydarzenia">Co już było?</a></h3>
+      <h3 class="strip"><a href="/wydarzenia"><%= t 'home.past_event' %></a></h3>
       <div class="inside">
         <%= render partial: "events/event", collection: @past_events %>
       </div><!-- inside -->
