@@ -11,6 +11,8 @@ gem 'i18n'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'pry'
+  gem 'pry-rails'
 end
 
 group :production do
