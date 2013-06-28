@@ -79,7 +79,7 @@ nav ul {
   li {
     display: inline-block;
   }
-  li:first-child { margin-right: 80px; }
+  li:first-child { margin-right: 80px; min-width: 125px;}
   li:last-child { margin-left: 85px; }
   #brand + li {
     margin-left: -20px;
@@ -646,7 +646,7 @@ aside h5 {
 .lang-icons {
   position: absolute;
   top: 1px;
-  right: 0px;
+  right: 12px;
   a {
     text-decoration: none;
   }
