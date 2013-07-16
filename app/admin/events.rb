@@ -12,7 +12,8 @@ ActiveAdmin.register Event do
     f.inputs "Events" do
       f.input :name
       f.input :headline
-      f.input :description
+      f.input :description_pl
+      f.input :description_en
       f.input :date_description
       f.input :location
       f.input :start_at
