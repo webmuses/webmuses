@@ -25,6 +25,10 @@ pl:
     headline: Nasi coachowie :)
   events:
     headline: Może wpadniesz?
+    all_headline: Wydarzenia
     group_title:  Grupy robocze
+    see_all: Zobaczy wszystkie wydarzenia
+    coming_up: Nadchodzące wydarzenia
+    past_events: Co już było?
   articles:
     headline: Napisali o nas

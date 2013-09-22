@@ -1,7 +1,7 @@
 <aside class="materials">
   <% if @current_events.present? %>
     <div id="upcoming_events" class="box">
-      <h3 class="strip"><a href="/wydarzenia">Nadchodzące wydarzenia</a></h3>
+      <h3 class="strip"><a href="/wydarzenia"><%= t 'events.coming_up'%></a></h3>
       <div class="inside">
         <%= render partial: "events/event", collection: @current_events %>
       </div><!-- inside -->
@@ -9,10 +9,14 @@
   <% end %>
   <% if @past_events.present? %>
     <div id="past_events" class="box">
-      <h3 class="strip"><a href="/wydarzenia">Co już było?</a></h3>
+      <h3 class="strip"><a href="/wydarzenia"><%= t 'events.past'%></a></h3>
       <div class="inside">
         <%= render partial: "events/event", collection: @past_events %>
       </div><!-- inside -->
     </div> <!-- past events -->
   <% end %>
+  <div class="box">
+    <a href="/events"><h3 class="strip"><%= t 'events.see_all' %> &gt;&gt;</h3></a>
+  </div>
+
 </aside>

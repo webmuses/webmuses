@@ -25,7 +25,11 @@ en:
     headline: Our coaches
   events:
     headline: Events
+    all_headline: All events
     group_title:  Working Groups
+    see_all: See all our events
+    coming_up: Coming up
+    past_events: Past events
   articles:
     headline: Wrote about us
 
