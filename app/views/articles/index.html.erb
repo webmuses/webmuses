@@ -1,7 +1,11 @@
 <ul id="articles">
   <% @articles.each do |article| %>
     <li>
-      <a target="_blank" href="<%= article.url %>"><%= raw article.title %></a>
+      <%= raw article.title %>
+      -
+      <a target="_blank" href="<%= article.url %>">
+        <%= raw article.url %>
+      </a>
     </li>
   <% end %>
 </table>
