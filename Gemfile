@@ -3,11 +3,12 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.14'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'rails_autolink'
 gem 'thin'
 gem 'i18n'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'sqlite3'
