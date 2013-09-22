@@ -9,14 +9,10 @@
   <% end %>
   <% if @past_events.present? %>
     <div id="past_events" class="box">
-      <h3 class="strip"><a href="/wydarzenia"><%= t 'events.past'%></a></h3>
+      <a href="/events"><h3 class="strip"><%= t 'events.see_all' %> &gt;&gt;</h3></a>
       <div class="inside">
         <%= render partial: "events/event", collection: @past_events %>
       </div><!-- inside -->
     </div> <!-- past events -->
   <% end %>
-  <div class="box">
-    <a href="/events"><h3 class="strip"><%= t 'events.see_all' %> &gt;&gt;</h3></a>
-  </div>
-
 </aside>
