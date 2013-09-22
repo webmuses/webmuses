@@ -652,3 +652,16 @@ aside h5 {
     text-decoration: none;
   }
 }
+ul#articles {
+  margin-top: 40px;
+  padding: 0px;
+  list-style: none;
+  border-top: 1px dashed #ccc;
+  li {
+    padding: 20px 0px;
+    border-bottom: 1px dashed #ccc;
+  }
+  a {
+     text-decoration: none;
+  }
+}

@@ -11,7 +11,7 @@ gem 'i18n'
 gem 'rails_12factor'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.8'
   gem 'pry'
   gem 'pry-rails'
   gem 'awesome_print'
