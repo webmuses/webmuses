@@ -1,0 +1,10 @@
+<% if @cookies_unaccepted %>
+  <div id="cookies-message-container">
+    <div id="cookies-message">
+      Ta strona używa ciasteczek (cookies), dzięki którym może działać lepiej.
+      <a href="http://wszystkoociasteczkach.pl" target="_blank">Dowiedz się więcej</a>
+      <a id="accept-cookies">Rozumiem</a>
+    </div>
+  </div>
+  <%= javascript_include_tag 'cookies' %>
+<% end %>
