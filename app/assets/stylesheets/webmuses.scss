@@ -529,8 +529,13 @@ div.tabbed {
 
 #partners div, #sponsors div {
    clear: both;
-   min-height: 100px;
    padding: 25px 0;
+}
+#partners div {
+   min-height: 100px;
+}
+#sponsors div {
+   min-height: 60px;
 }
 
 #partners, #sponsors, #us{
