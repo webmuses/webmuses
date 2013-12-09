@@ -7,6 +7,7 @@ gem 'rails', '3.2.14'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'rails_autolink'
 gem 'thin'
+gem 'turbolinks'
 gem 'i18n'
 gem 'rails_12factor'
 
