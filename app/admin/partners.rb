@@ -4,6 +4,6 @@ ActiveAdmin.register Partner do
     column :name
     column :position
     column :category
-    default_actions
+    actions
   end
 end

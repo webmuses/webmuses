@@ -3,7 +3,7 @@ ActiveAdmin.register Article do
     column :id
     column :title
     column :url
-    default_actions
+    actions
   end
 
 end

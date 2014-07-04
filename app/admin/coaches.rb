@@ -3,6 +3,6 @@ ActiveAdmin.register Coach do
     column :id
     column :name
     column :twitter
-    default_actions
+    actions
   end
 end

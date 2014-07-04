@@ -5,7 +5,7 @@ ActiveAdmin.register Event do
     column :state
     column :headline
     column :start_at
-    default_actions
+    actions
   end
 
   form do |f|
