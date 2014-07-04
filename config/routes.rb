@@ -1,4 +1,4 @@
-Webmuses::Application.routes.draw do
+Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :admin_users, ActiveAdmin::Devise.config
 
@@ -7,10 +7,10 @@ Webmuses::Application.routes.draw do
     resources :articles, only: [:index]
     resources :events, only: [:index, :show]
     resources :coaches, only: [:index]
-    match '/wydarzenia', :to  => 'events#summary'
-    match '/materialy', :to  => 'static_pages#materials'
-    match '/newsletter' => redirect(NEWSLETTER_URL)
-    match '/youth' => redirect(WEBMUSES_YOUTH_URL)
+    get '/wydarzenia', :to  => 'events#summary'
+    get '/materialy', :to  => 'static_pages#materials'
+    get '/newsletter' => redirect(NEWSLETTER_URL)
+    get '/youth' => redirect(WEBMUSES_YOUTH_URL)
     root :to  => 'static_pages#home', as: 'home'
   end
 end

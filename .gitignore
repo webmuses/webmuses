@@ -17,3 +17,4 @@
 *.swo
 .sass-cache/
 *.DS_Store
+.env
