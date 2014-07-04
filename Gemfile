@@ -1,9 +1,9 @@
 #Gem
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.2'
 
-gem 'rails', '3.2.17'
+gem 'rails', '3.2.19'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'rails_autolink'
 gem 'thin'
@@ -23,7 +23,6 @@ end
 group :production do
   gem 'pg'
 end
-
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
