@@ -1,4 +1,7 @@
 ActiveAdmin.register Event do
+  permit_params :name, :headline, :description_pl, :location, :start_at, :end_at,
+    :fb_url, :registration_url, :date_description, :price, :state, :description_en
+
   index do
     column :id
     column :name
@@ -22,7 +25,7 @@ ActiveAdmin.register Event do
       f.input :registration_url
       f.input :price
       f.input :state, as: :select, collection: ["draft", "past", "current"]
-      f.buttons
+      f.actions
     end
   end
 end
