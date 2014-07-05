@@ -20,6 +20,8 @@ group :development, :test do
   gem 'binding_of_caller'
 end
 
+gem 'quiet_assets', group: :development
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
@@ -31,5 +33,4 @@ gem 'uglifier', '~> 2.5.1'
 
 gem 'jquery-rails'
 gem 'dotenv-rails'
-gem 'quiet_assets'
 gem 'jquery-ui-rails', '~> 4.2.1'
