@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :articles, only: [:index]
     resources :events, only: [:index, :show]
     resources :coaches, only: [:index]
-    get '/wydarzenia', :to  => 'events#summary'
+    get '/wydarzenia', :to  => 'events#index'
     get '/materialy', :to  => 'static_pages#materials'
     get '/newsletter' => redirect(NEWSLETTER_URL)
     get '/youth' => redirect(WEBMUSES_YOUTH_URL)

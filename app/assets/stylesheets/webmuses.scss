@@ -513,9 +513,11 @@ div.tabbed {
   height: 219px;
 }
 
-#partners img, #sponsors img {
+#partners img {
    float: left;
-   width: 180px;
+   max-width: 180px;
+   max-height: 120px;
+
 }
 
 #kompany {
@@ -528,15 +530,23 @@ div.tabbed {
    width: 380px;
 }
 
-#partners div, #sponsors div {
-   clear: both;
-   padding: 25px 0;
-}
 #partners div {
-   min-height: 100px;
+   padding: 25px 0;
+   clear: both;
+   min-height: 85px;
 }
-#sponsors div {
-   min-height: 60px;
+#sponsors div.sponsor {
+   height: 70px;
+   width: 200px;
+   margin-top: 20px;
+   text-align: center;
+   float: left;
+}
+#sponsors div.sponsor img {
+  margin: 0 auto;
+  vertical-align: middle;
+  max-height: 70px;
+  max-width: 190px;
 }
 
 #partners, #sponsors, #us{

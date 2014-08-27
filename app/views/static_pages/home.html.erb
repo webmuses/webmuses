@@ -9,13 +9,15 @@
      <%= t 'home.text_2' %>
    </p>
   </div>
-  <div id="sponsors">
-    <h2><%= t 'home.sponsors' %></h2>
-    <%= render collection: @sponsors, partial: "partners/partner" %>
-  </div>
   <div id="partners">
     <h2><%= t 'home.partners' %></h2>
     <%= render collection: @partners, partial: "partners/partner" %>
+  </div>
+  <div class="clear">&nbsp;</div>
+  <div id="sponsors">
+    <h2><%= t 'home.sponsors' %></h2>
+    <%= render collection: @sponsors, partial: "partners/sponsor" %>
+    <div class="clear">&nbsp;</div>
   </div>
 </div>
 
