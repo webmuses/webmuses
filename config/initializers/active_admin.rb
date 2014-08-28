@@ -100,7 +100,7 @@ ActiveAdmin.setup do |config|
   # Admin comments are enabled by default.
   #
   # Default:
-  # config.allow_comments = true
+   config.allow_comments = false
   #
   # You can turn them on and off for any given namespace by using a
   # namespace config block.
@@ -116,7 +116,7 @@ ActiveAdmin.setup do |config|
   # Enable and disable Batch Actions
   #
   config.batch_actions = true
-  
+
 
   # == Controller Filters
   #
@@ -134,7 +134,7 @@ ActiveAdmin.setup do |config|
   #
   # To load a stylesheet:
   #   config.register_stylesheet 'my_stylesheet.css'
-  
+
   # You can provide an options hash for more control, which is passed along to stylesheet_link_tag():
   #   config.register_stylesheet 'my_print_stylesheet.css', :media => :print
   #

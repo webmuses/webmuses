@@ -1,12 +1,11 @@
-default: &default
+development:
+  database: webmuses_development
   adapter: postgresql
   encoding: unicode
   pool: 5
 
-development:
-  <<: *default
-  database: webmuses_development
-
 test:
-  <<: *default
   database: webmuses_test
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
