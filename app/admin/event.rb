@@ -2,11 +2,16 @@ ActiveAdmin.register Event do
   permit_params :name, :headline, :description_pl, :location, :start_at, :end_at,
     :fb_url, :registration_url, :date_description, :price, :state, :description_en
 
+  filter :name
+  filter :place
+
   index do
     column :id
-    column :name
+    column :title do |c|
+      raw(c.title)
+    end
     column :state
-    column :headline
+    column :place_id
     column :start_at
     actions
   end
@@ -19,6 +24,7 @@ ActiveAdmin.register Event do
       f.input :description_en
       f.input :date_description
       f.input :location
+      f.input :place, as: :select, collection: Place.all
       f.input :start_at
       f.input :end_at
       f.input :fb_url
@@ -30,7 +36,7 @@ ActiveAdmin.register Event do
   end
   controller do
     def scoped_collection
-      end_of_association_chain.latest
+      Event.reorder("start_at DESC")
     end
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130922192301) do
+ActiveRecord::Schema.define(version: 20140904102907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,7 +83,10 @@ ActiveRecord::Schema.define(version: 20130922192301) do
     t.string   "price"
     t.string   "state",            default: "draft"
     t.text     "description_en"
+    t.integer  "place_id"
   end
+
+  add_index "events", ["place_id"], name: "index_events_on_place_id", using: :btree
 
   create_table "muses", force: true do |t|
     t.string   "name"
@@ -109,6 +112,14 @@ ActiveRecord::Schema.define(version: 20130922192301) do
     t.datetime "updated_at",                        null: false
     t.string   "category",       default: "normal"
     t.text     "description_en"
+  end
+
+  create_table "places", force: true do |t|
+    t.string   "name"
+    t.string   "icon"
+    t.string   "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

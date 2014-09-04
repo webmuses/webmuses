@@ -36,8 +36,8 @@ en:
     where: Where
     price: Price
     registration: Registartion
-    more: Here >>
-    inf: Info
+    more: More
+    info: Here >>
   articles:
     headline: Wrote about us
 

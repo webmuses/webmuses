@@ -5,6 +5,8 @@ class Event < ActiveRecord::Base
   scope :past, -> { where(state: 'past') }
   scope :latest, -> { order("start_at DESC") }
 
+  belongs_to :place
+
 
   def current?
     state == "current"
@@ -12,5 +14,13 @@ class Event < ActiveRecord::Base
 
   def has_price?
     price.present? and price.to_i > 0
+  end
+
+  def address
+    place ? (place.name + ", " + place.address.to_s) : location
+  end
+
+  def title
+   [name, headline].reject(&:blank?).join("<br/>")
   end
 end

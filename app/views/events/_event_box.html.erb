@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box event-box" style="background-image: url('<%= raw event.place.icon %>')">
   <h3 class="strip">
     <a target="_blank" href="<%= event.fb_url %>"><%= raw event.name %></a>
   </h3>
@@ -11,7 +11,7 @@
       </p>
       <p>
         <b><%= t 'events.where' %>:</b>
-        <%= raw event.location %>
+        <%= raw event.address %>
       </p>
       <% if event.has_price? %>
         <p>

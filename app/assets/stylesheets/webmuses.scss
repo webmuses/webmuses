@@ -209,10 +209,16 @@ aside {
 
 .box {
   border: 1px solid #1cbcaf;
+  margin: 30px 0 10px 0;
+}
+
+.event-box {
   margin: 30px 1% 10px 1%;
   width: 47%;
   float: left;
   height: 220px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .box .inside, .social-box .inside {
