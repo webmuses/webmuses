@@ -4,7 +4,7 @@
   </h3>
   <div class="inside">
     <div class="event">
-      <h3><%= raw event. headline %></h3>
+      <h3><%= raw(event.headline || event.name) %></h3>
       <p>
         <b><%= t 'events.where' %>:</b>
         <%= raw event.address %>
