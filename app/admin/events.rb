@@ -28,4 +28,9 @@ ActiveAdmin.register Event do
       f.actions
     end
   end
+  controller do
+    def scoped_collection
+      end_of_association_chain.latest
+    end
+  end
 end
