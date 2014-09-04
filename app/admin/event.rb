@@ -1,6 +1,6 @@
 ActiveAdmin.register Event do
   permit_params :name, :headline, :description_pl, :location, :start_at, :end_at,
-    :fb_url, :registration_url, :date_description, :price, :state, :description_en
+    :fb_url, :registration_url, :date_description, :price, :state, :description_en, :place_id
 
   filter :name
   filter :place
