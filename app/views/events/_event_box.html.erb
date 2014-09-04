@@ -6,12 +6,12 @@
     <div class="event">
       <h3><%= raw event. headline %></h3>
       <p>
-        <b><%= t 'events.when' %>:</b>
-        <%= raw event.date_description %>
-      </p>
-      <p>
         <b><%= t 'events.where' %>:</b>
         <%= raw event.address %>
+      </p>
+      <p>
+        <b><%= t 'events.when' %>:</b>
+        <%= raw event.date_description %>
       </p>
       <% if event.has_price? %>
         <p>
