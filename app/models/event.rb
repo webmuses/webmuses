@@ -23,4 +23,8 @@ class Event < ActiveRecord::Base
   def title
    [name, headline].reject(&:blank?).join("<br/>")
   end
+
+  def subheadline
+    headline.present? ? headline : name
+  end
 end
