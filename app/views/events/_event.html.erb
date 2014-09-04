@@ -1,12 +1,26 @@
 <div class="event">
- <h4><a target="_blank" href="<%= event.fb_url %>"><%= raw event.name %></a></h4>
- <h5><%= raw event.headline %></h5>
- <p><b>Kiedy:</b> <%= raw event.date_description %></p>
- <p><b>Gdzie:</b> <%= raw event.location %></p>
- <% if event.price.present? %>
-   <p><b>Koszt:</b> <%= raw event.price %></p>
- <% end %>
- <% if event.registration_url.present? and event.current? %>
-   <p><b>Zapisy:</b><br/> <%= link_to event.registration_url, event.registration_url, target: "blank" %></p>
- <% end %>
+  <h4>
+    <a target="_blank" href="<%= event.fb_url %>"><%= raw event.name %></a>
+  </h4>
+  <h5><%= raw event.headline %></h5>
+  <p>
+    <b><%= t 'events.when' %>:</b>
+    <%= raw event.date_description %>
+  </p>
+  <p>
+    <b><%= t 'events.where' %>:</b>
+    <%= raw event.location %>
+  </p>
+  <% if event.has_price? %>
+    <p>
+      <b><%= t 'events.price' %>:</b>
+      <%= raw event.price %>
+    </p>
+  <% end %>
+  <% if event.registration_url.present? and event.current? %>
+    <p>
+      <b><%= t 'events.registartion' %>:</b></br/>
+      <%= link_to event.registration_url, event.registration_url, target: "blank" %>
+    </p>
+  <% end %>
 </div><!-- event -->

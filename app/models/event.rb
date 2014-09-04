@@ -9,4 +9,8 @@ class Event < ActiveRecord::Base
   def current?
     state == "current"
   end
+
+  def has_price?
+    price.present? and price.to_i > 0
+  end
 end

@@ -32,7 +32,14 @@ en:
     group_title:  Working Groups
     see_all: See all our events
     coming_up: Coming up
+    when: When
+    where: Where
+    price: Price
+    registration: Registartion
+    more: Here >>
+    inf: Info
   articles:
     headline: Wrote about us
+
 
 

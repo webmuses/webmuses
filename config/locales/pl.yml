@@ -32,5 +32,11 @@ pl:
     group_title:  Grupy robocze
     see_all: Zobacz wszystkie wydarzenia
     coming_up: Nadchodzące wydarzenia
+    when: Kiedy
+    where: Gdzie
+    price: Koszt
+    registration: Zapisy
+    more: Więcej
+    info: Tutaj >>
   articles:
     headline: Napisali o nas
