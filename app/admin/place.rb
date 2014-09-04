@@ -1,5 +1,5 @@
 ActiveAdmin.register Place do
-  permit_params :name, :adddress, :icon
+  permit_params :name, :address, :icon
 
   index do
     column :name
