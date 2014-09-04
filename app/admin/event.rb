@@ -1,5 +1,5 @@
 ActiveAdmin.register Event do
-  permit_params :name, :headline, :description_pl, :location, :start_at, :end_at,
+  permit_params :name, :headline, :description_pl, :start_at, :end_at,
     :fb_url, :registration_url, :date_description, :price, :state, :description_en, :place_id
 
   filter :name
@@ -23,7 +23,6 @@ ActiveAdmin.register Event do
       f.input :description_pl
       f.input :description_en
       f.input :date_description
-      f.input :location
       f.input :place, as: :select, collection: Place.all
       f.input :start_at
       f.input :end_at
