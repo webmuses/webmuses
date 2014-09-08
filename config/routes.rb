@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   scope "(:locale)", :locale => /en|pl/ do
     resources :muses, only: [:index]
     resources :articles, only: [:index]
-    resources :events, only: [:index, :show]
+    resources :events, only: [:index]
     resources :coaches, only: [:index]
     get '/wydarzenia', :to  => 'events#index'
     get '/materialy', :to  => 'static_pages#materials'
