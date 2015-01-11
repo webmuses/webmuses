@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
   include I18nable
+  include Eventable
   scope :latest, -> { order("end_at DESC") }
   scope :past, ->{ where("end_at < ?", Date.today) }
   scope :current, ->{ where("end_at >= ?", Date.today) }

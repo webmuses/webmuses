@@ -1,6 +1,6 @@
 <ul id="articles">
   <% @articles.each do |article| %>
-    <li>
+    <li class="<%= article.event_style %>">
       <%= raw article.title %><br/>
       <a target="_blank" href="<%= article.url %>">
         <%= raw article.url %>

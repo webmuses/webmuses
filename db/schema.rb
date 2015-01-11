@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150111154843) do
+ActiveRecord::Schema.define(version: 20150111160515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,9 +52,12 @@ ActiveRecord::Schema.define(version: 20150111154843) do
   create_table "articles", force: true do |t|
     t.string   "title"
     t.string   "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "event_type_id"
   end
+
+  add_index "articles", ["event_type_id"], name: "index_articles_on_event_type_id", using: :btree
 
   create_table "coaches", force: true do |t|
     t.text     "description_pl"
@@ -82,8 +85,10 @@ ActiveRecord::Schema.define(version: 20150111154843) do
     t.string   "price"
     t.text     "description_en"
     t.integer  "place_id"
+    t.integer  "event_type_id"
   end
 
+  add_index "events", ["event_type_id"], name: "index_events_on_event_type_id", using: :btree
   add_index "events", ["place_id"], name: "index_events_on_place_id", using: :btree
 
   create_table "muses", force: true do |t|

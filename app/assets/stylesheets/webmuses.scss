@@ -689,8 +689,19 @@ ul#articles {
   li {
     padding: 20px 0px;
     border-bottom: 1px dashed #ccc;
+    a {
+       text-decoration: none;
+    }
+    &.rails-girls-style {
+     background: url('../assets/rg-krk.png') no-repeat 100% 50%;
+    }
   }
-  a {
-     text-decoration: none;
+}
+.rails-girls-style {
+  h3.strip {
+    background-color: #d3360b;
+  }
+  &.box {
+   border-color: #d3360b;
   }
 }

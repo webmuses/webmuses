@@ -1,4 +1,4 @@
-<div class="box event-box" style="background-image: url('<%= raw event.place.try(:icon) %>')">
+<div class="box event-box <%= event.event_style %>" style="background-image: url('<%= raw event.place.try(:icon) %>')">
   <h3 class="strip">
     <a target="_blank" href="<%= event.fb_url %>"><%= raw event.name %></a>
   </h3>

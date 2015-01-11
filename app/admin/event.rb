@@ -1,6 +1,6 @@
 ActiveAdmin.register Event do
-  permit_params :name, :headline, :description_pl, :start_at, :end_at,
-    :fb_url, :registration_url, :date_description, :price, :state, :description_en, :place_id
+  permit_params :name, :headline, :description_pl, :start_at, :end_at, :event_type_id,
+    :fb_url, :registration_url, :date_description, :price, :description_en, :place_id
 
   filter :name
   filter :place
@@ -10,7 +10,7 @@ ActiveAdmin.register Event do
     column :title do |c|
       raw(c.title)
     end
-    column :state
+    column :event_type
     column :place_id
     column :start_at
     actions
@@ -29,7 +29,7 @@ ActiveAdmin.register Event do
       f.input :fb_url
       f.input :registration_url
       f.input :price
-      f.input :state, as: :select, collection: ["draft", "past", "current"]
+      f.input :event_type_id, as: :select, collection: EventType.all_with_index
       f.actions
     end
   end
