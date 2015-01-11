@@ -20,10 +20,10 @@
   <div id="topstrip">
     <div class="lang-icons">
      <%= link_to url_for(:locale => 'en', :scope => params[:scope]) do %>
-       <%= image_tag("/assets/flag_uk.png") %>
+       <%= image_tag("flag_uk.png") %>
      <% end %>
      <%= link_to url_for(:locale => 'pl', :scope => params[:scope]) do %>
-       <%= image_tag("/assets/flag_pl.png") %>
+       <%= image_tag("flag_pl.png") %>
      <% end %>
     </div>
   </div>
@@ -48,7 +48,7 @@
     <div class="container">
        <div id="title-holder">
          <% if @title == "Home" %>
-           <%= image_tag("/assets/head-home.png",
+           <%= image_tag("head-home.png",
                :alt => "We inspire. We educate. We make your eyes light up.") %>
          <% else %>
            <h1><%= raw @title %></h1>

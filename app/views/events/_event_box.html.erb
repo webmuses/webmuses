@@ -5,10 +5,12 @@
   <div class="inside">
     <div class="event">
       <h3><%= raw(event.subheadline) %></h3>
-      <p>
-        <b><%= t 'events.where' %>:</b>
-        <%= raw event.address %>
-      </p>
+      <% if event.has_address? %>
+        <p>
+          <b><%= t 'events.where' %>:</b>
+          <%= raw event.address %>
+        </p>
+      <% end %>
       <p>
         <b><%= t 'events.when' %>:</b>
         <%= raw event.date_description %>

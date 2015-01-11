@@ -7,10 +7,12 @@
     <b><%= t 'events.when' %>:</b>
     <%= raw event.date_description %>
   </p>
-  <p>
-    <b><%= t 'events.where' %>:</b>
-    <%= raw event.address %>
-  </p>
+  <% if event.has_address? %>
+    <p>
+      <b><%= t 'events.where' %>:</b>
+      <%= raw event.address %>
+    </p>
+<% end %>
   <% if event.has_price? %>
     <p>
       <b><%= t 'events.price' %>:</b>

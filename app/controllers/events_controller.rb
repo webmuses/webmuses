@@ -2,7 +2,7 @@ class EventsController < ApplicationController
 
   def index
     @title = t('events.all_headline')
-    @events = Event.visible.latest.all
+    @events = Event.latest.all
   end
 
 end

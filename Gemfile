@@ -1,7 +1,7 @@
 #Gem
 source 'https://rubygems.org'
 
-ruby '2.1.5'
+ruby '2.2.0'
 
 gem 'rails', '~> 4.1.8'
 gem 'activeadmin', github: 'gregbell/active_admin'
@@ -9,7 +9,7 @@ gem 'rails_autolink'
 gem 'unicorn'
 gem 'turbolinks'
 gem 'i18n'
-gem 'devise', '~> 3.2.4'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.8'
@@ -27,10 +27,10 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'sass-rails', '~> 4.0.3'
-gem 'coffee-rails', '~> 4.0.1'
-gem 'uglifier', '~> 2.5.1'
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'uglifier'
 
 gem 'jquery-rails'
 gem 'dotenv-rails'
-gem 'jquery-ui-rails', '~> 4.2.1'
+gem 'jquery-ui-rails'
