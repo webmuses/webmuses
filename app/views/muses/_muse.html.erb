@@ -3,10 +3,9 @@
     <%= image_tag(muse.photo_url) %>
     <h3><%= raw(muse.name) %></h3>
     <h5 class="twitter"><%= twitter_link(muse.twitter) %></h5>
-    <h4><%= muse.title %></h4>
     <%= simple_format(raw(muse.description), {}, sanitize: false) %>
   </div>
 </div>
-<% if (muse_counter%3) == 2%>
+<% if (muse_counter % 3) == 2%>
   <div class="dotted"></div>
 <% end %>
