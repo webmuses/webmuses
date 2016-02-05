@@ -146,4 +146,5 @@ ActiveAdmin.setup do |config|
   #
   # Set the CSV builder separator (default is ",")
   # config.csv_column_separator = ','
+  config.default_per_page = 50
 end
