@@ -5,7 +5,8 @@ class EventType
        'Amusing Workshops',
        'Rails Girls',
        'WebSchool',
-       'Muse Talk'
+       'Muse Talk',
+       'The Awwwesomes'
       ]
     end
 

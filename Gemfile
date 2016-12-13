@@ -2,14 +2,13 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 gem 'rails', '~> 5.0.0.beta2'
-gem 'activeadmin', github: 'activeadmin/activeadmin', branch: 'rails-5-rspec'
+gem 'activeadmin', github: 'activeadmin'
 gem 'rails_autolink'
 gem 'unicorn'
 gem 'turbolinks'
 gem 'i18n'
-gem 'devise', github: 'plataformatec/devise', ref: '1d77099861e2082a6bf5ef9c3a422c2ec315adb2'
-gem 'formtastic', github: 'justinfrench/formtastic', branch: 'master'
-#gem "kaminari", github: "amatsuda/kaminari"
+gem 'devise'
+gem 'formtastic'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.8'

@@ -705,3 +705,12 @@ ul#articles {
    border-color: #d3360b;
   }
 }
+
+.the-awwwesomes-style {
+  h3.strip {
+    background-color: #f06463;
+  }
+  &.box {
+   border-color: #f06463;
+  }
+}
