@@ -1,4 +1,4 @@
-<div class="muse <%= "last" if (muse_counter+1)%3 == 0 %>">
+<div class="muse <%= "last" if (muse_counter+1)%4 == 0 %>">
   <div id='<%= muse.name.split.first %>'>
     <%= image_tag(muse.photo_url) %>
     <h3><%= raw(muse.name) %></h3>
@@ -6,6 +6,6 @@
     <%= simple_format(raw(muse.description), {}, sanitize: false) %>
   </div>
 </div>
-<% if (muse_counter % 3) == 2%>
+<% if (muse_counter % 4) == 3%>
   <div class="dotted"></div>
 <% end %>

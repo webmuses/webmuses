@@ -582,37 +582,18 @@ div.tabbed {
 #muses {
   margin-top: 50px;
   margin-bottom: 40px;
-  .muse {
-    float: left;
-    width: 290px;
-    margin-right: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-right: 1px dashed #c8c7c7;
-    div {
-      width: 250px;
-    }
-    img {
-     width: 240px;
-     border: 3px solid #1FCFC1;
-    }
-    h3 {
-     font-size: 24px;
-     margin: 20px 0px;
-     text-transform: capitalize;
-    }
-    p {
-     margin: 0px;
-    }
-  }
   .muse.last {
     margin-right: 0px;
     border-right: none;
     width: 250px;
   }
-  .muse.coach {
+  .muse {
     width: 224px;
     margin-right: 20px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-right: 1px dashed #c8c7c7;
     div {
       width: 204px;
     }
@@ -627,7 +608,7 @@ div.tabbed {
       font-size: 14px;
     }
   }
-  .muse.coach.last {
+  .muse.last {
     width: 194px;
     margin-right: 0;
   }
