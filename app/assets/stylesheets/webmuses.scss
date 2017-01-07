@@ -61,8 +61,11 @@ header a:hover {
   width: 90%;
 }
 
-#title h1.awwwesomes {
-  font-size: 3.5em;
+#title.awwwesomes  {
+  h1 {
+    font-size: 3.5em;
+    color: #151d46;
+  }
 }
 
 #title img{

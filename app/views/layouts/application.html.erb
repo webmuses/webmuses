@@ -44,14 +44,14 @@
       </nav>
     </div>
   </header>
-  <div id="title">
+  <div id="title" class="<%= params[:action] %>">
     <div class="container">
        <div id="title-holder">
          <% if @title == "Home" %>
            <%= image_tag("head-home.png",
                :alt => "We inspire. We educate. We make your eyes light up.") %>
          <% else %>
-           <h1 class="<%= params[:action] %>"><%= raw @title %></h1>
+           <h1><%= raw @title %></h1>
          <% end %>
         </div>
        <div class="clear"></div>
