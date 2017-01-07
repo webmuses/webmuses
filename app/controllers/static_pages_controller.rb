@@ -16,6 +16,7 @@ class StaticPagesController < ApplicationController
   def awwwesomes
     @title = 'WebMuses + The Awwwesomes'
     @coaches = Coach.visible.awwwesomes.all.shuffle
+    @muses = Muse.visible.all.shuffle
   end
 
 end

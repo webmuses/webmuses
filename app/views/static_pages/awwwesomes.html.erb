@@ -1,4 +1,20 @@
 <div id="muses" class="coaches">
+  <div class="love">
+    <%= image_tag 'logo.png' %>
+    <span>+</span>
+    <%= link_to 'https://theawwwesomes.org/' do %>
+      <%= image_tag 'awww_logo.png' %>
+    <% end %>
+  </div>
+  <h3>Info</h3>
+  <div>
+    <p><b>Tutorial:</b> <%= link_to 'https://the-awwwesomes.gitbooks.io/html-css-step-by-step/content/pl/' %></p>
+    <p><b>Where:</b> Cluster Cowork, ul. Grodzka 42/1</p>
+    <p><b>When:</b> 0.01, 17.01, 24.01, 31.01, 7.02, 14.02, 21.02, 28.02</p>
+  </div>
+  <h3>Coaches</h3>
   <%= render partial: "coaches/coach", collection: @coaches %>
   <div class="clear"></div>
+  <h3>Team</h3>
+  <%= render partial: "muses/muse", collection: @muses %>
 </div>
