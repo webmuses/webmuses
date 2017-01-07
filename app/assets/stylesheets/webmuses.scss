@@ -589,7 +589,7 @@ div.tabbed {
   .muse.last {
     margin-right: 0px;
     border-right: none;
-    width: 250px;
+    width: 205px;
   }
   .muse {
     width: 224px;
@@ -600,10 +600,10 @@ div.tabbed {
     border-right: 1px dashed #c8c7c7;
     div {
       width: 204px;
+      min-height: 245px;
     }
     img {
-      width: 198px;
-      height: auto;
+      width: 200px;
     }
     h3 {
      font-size: 19px;
@@ -611,10 +611,10 @@ div.tabbed {
     p {
       font-size: 14px;
     }
-  }
-  .muse.last {
-    width: 194px;
-    margin-right: 0;
+    a.imgLink {
+      display: block;
+      min-height: 245px;
+    }
   }
 }
 

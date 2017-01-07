@@ -1,6 +1,6 @@
 <div class="muse coach <%= "last" if (coach_counter+1)%4 == 0 %>">
   <div>
-    <%= link_to image_tag(coach.photo), coach.url, target: "blank" %>
+    <%= link_to image_tag(coach.photo), coach.url, target: "blank", class: 'imgLink' %>
     <h3><%= raw(coach.name) %></h3>
     <h5 class="twitter"><%= twitter_link(coach.twitter) %></h5>
     <%= simple_format(coach.description, {}, sanitize: false) %>
