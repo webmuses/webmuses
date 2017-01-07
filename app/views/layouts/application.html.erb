@@ -32,7 +32,7 @@
       <nav>
         <ul>
           <li><%= link_to t("menu.events"), wydarzenia_path %></li>
-          <li><%= link_to t("menu.materials"), materialy_path %></li>
+          <li><%= link_to 'Awwwesomes', awwwesomes_path %></li>
           <li id="brand">
             <%= link_to home_path, { class: "logo" } do %>
               <img src="/assets/logo.png" alt="Powrót do strony głównej"/>
@@ -51,7 +51,7 @@
            <%= image_tag("head-home.png",
                :alt => "We inspire. We educate. We make your eyes light up.") %>
          <% else %>
-           <h1><%= raw @title %></h1>
+           <h1 class="<%= params[:action] %>"><%= raw @title %></h1>
          <% end %>
         </div>
        <div class="clear"></div>

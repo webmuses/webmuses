@@ -12,4 +12,10 @@ class StaticPagesController < ApplicationController
     @title = t('materials.headline')
   end
 
+
+  def awwwesomes
+    @title = 'WebMuses + The Awwwesomes'
+    @coaches = Coach.visible.awwwesomes.all.shuffle
+  end
+
 end

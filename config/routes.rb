@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :coaches, only: [:index]
     get '/wydarzenia', :to  => 'events#index'
     get '/materialy', :to  => 'static_pages#materials'
+    get '/awwwesomes', :to  => 'static_pages#awwwesomes'
     get '/newsletter' => redirect(NEWSLETTER_URL)
     get '/youth' => redirect(WEBMUSES_YOUTH_URL)
     root :to  => 'static_pages#home', as: 'home'
