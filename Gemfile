@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.5.7'
 
-gem 'rails', '~> 5.0.0.beta2'
-gem 'activeadmin', github: 'activeadmin'
+gem 'rails', '5.0.7.2'
+gem 'activeadmin', '~> 1.0'
 gem 'rails_autolink'
 gem 'unicorn'
 gem 'turbolinks'
-gem 'i18n'
+gem 'i18n', '0.9.5'
 gem 'devise'
 gem 'formtastic'
 
@@ -18,8 +18,6 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
 end
-
-gem 'quiet_assets', group: :development
 
 group :production do
   gem 'pg'
